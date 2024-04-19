@@ -13,7 +13,7 @@ import { MdOutlineArrowDropDown } from "react-icons/md";
 import data from "../../utils/accordion";
 
 const Value = () => {
-    const [className,setClassName]= useState(null);
+  const [className, setClassName] = useState(null);
   return (
     <section className="v-wrapper">
       <div className="paddings innerWidth flexCenter v-container">
@@ -42,7 +42,11 @@ const Value = () => {
           >
             {data.map((item, i) => {
               return (
-                <AccordionItem className={`accordion-item ${className}`} key={i} uuid={i}>
+                <AccordionItem
+                  className={`accordion-item ${className}`}
+                  key={i}
+                  uuid={i}
+                >
                   <AccordionItemHeading>
                     <AccordionItemButton className="flexCenter accordion-button">
                       <AccordionItemState>
@@ -53,7 +57,9 @@ const Value = () => {
                         }
                       </AccordionItemState>
                       <div className="flexCenter icon">{item.icon}</div>
-                      <span className="primaryText accordion-heading">{item.heading}</span>
+                      <span className="primaryText accordion-heading">
+                        {item.heading}
+                      </span>
                       <div className="flexCenter icon">
                         <MdOutlineArrowDropDown size={20} />
                       </div>

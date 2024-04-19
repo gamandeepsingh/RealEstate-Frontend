@@ -46,7 +46,7 @@
     font-size: 1.1rem;
 }
 
-.accordion-button .prmaryText{
+.accordion-button .primaryText{
     font-size: 1.1rem;
 }
 
@@ -55,3 +55,14 @@
     border-radius: 6px;
 }
 
+@media (max-width:1024px) {
+    .v-container{
+        flex-direction: column;
+    }
+}
+@media (max-width:768px) {
+    .accordion-button .primaryText{
+        font-size: 0.8rem;
+    }
+    
+}
